@@ -1,0 +1,64 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username\
+$directory\
+$character"""
+
+right_format = """
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$cmd_duration"""
+
+add_newline = false
+
+palette = 'github_dark_default'
+
+[palettes.github_dark_default]
+colour_fg = '#e6edf3'
+colour_bg = '#0d1117'
+colour_selection_fg = '#e6edf3'
+colour_selection_bg = '#1e4273'
+colour_ansi_grey = '#484f58'
+colour_ansi_red = '#ff7b72'
+colour_ansi_green = '#3fb950'
+colour_ansi_yellow = '#d29922'
+colour_ansi_blue = '#58a6ff'
+colour_ansi_purple = '#bc8cff'
+colour_ansi_cyan = '#39c5cf'
+colour_ansi_white = '#b1bac4'
+colour_bright_grey = '#6e7681'
+colour_bright_red = '#ffa198'
+colour_bright_green = '#56d364'
+colour_bright_yellow = '#e3b341'
+colour_bright_blue = '#79c0ff'
+colour_bright_purple = '#d2a8ff'
+colour_bright_cyan = '#56d4dd'
+colour_bright_white = '#ffffff'
+
+[username]
+show_always = true
+style_root = "colour_ansi_red"
+style_user = "colour_ansi_green"
+
+[directory]
+style = "colour_ansi_yellow"
+
+[character]
+success_symbol = "[>](colour_ansi_green)"
+error_symbol = "[>](colour_ansi_red)"
+vimcmd_symbol = "[<](colour_ansi_green)"
+vimcmd_replace_one_symbol = "[<](colour_ansi_yellow)"
+vimcmd_replace_symbol = "[<](colour_ansi_yellow)"
+vimcmd_visual_symbol = "[<](colour_ansi_blue)"
+
+[git_branch]
+style = "colour_ansi_green"
+
+[cmd_duration]
+min_time = 37
+show_milliseconds = true
+style = "colour_ansi_yellow"
