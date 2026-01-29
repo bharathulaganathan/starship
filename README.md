@@ -8,6 +8,11 @@ sudo pacman -S starship
 curl -sS https://starship.rs/install.sh | sh
 ```
 
+### Get this config
+```sh
+git clone https://github.com/bharathulaganathan/starship ~/.config/starship
+```
+
 ### create starship config
 ```sh
 mkdir -p ~/.config/starship  && touch ~/.config/starship/starship.toml
