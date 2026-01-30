@@ -13,11 +13,6 @@ curl -sS https://starship.rs/install.sh | sh
 git clone https://github.com/bharathulaganathan/starship ~/.config/starship
 ```
 
-### create starship config
-```sh
-mkdir -p ~/.config/starship  && touch ~/.config/starship/starship.toml
-```
-
 ### change starship config location
 ```sh
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
