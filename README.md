@@ -3,9 +3,9 @@
 
 ### install starship
 ```sh
-sudo pacman -S starship
-# OR
 curl -sS https://starship.rs/install.sh | sh
+# OR
+sudo pacman -S starship
 ```
 
 ### Get this config
