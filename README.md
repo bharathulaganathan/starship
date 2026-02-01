@@ -1,19 +1,28 @@
-# [Starship](https://starship.rs/) config file
+# [Starship](https://starship.rs/) Config File
 
+## Install Starship
 
-### install starship
+### Arch Linux
 ```sh
-curl -sS https://starship.rs/install.sh | sh
-# OR
 sudo pacman -S starship
 ```
 
-### Get this config
+### Direct Install
+```sh
+curl -sS https://starship.rs/install.sh | sh
+```
+
+## Get this Config
 ```sh
 git clone https://github.com/bharathulaganathan/starship ~/.config/starship
 ```
 
-### change starship config location
+## Change Starship Config Location
 ```sh
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
+```
+
+## Reload ZSH
+```sh
+exec zsh
 ```
